@@ -1,3 +1,3 @@
 # GSMF-RS-DIL
 
-The code will be provided soon after the paper is accepted.
+The code is currently being organized and will be available for public access no later than November 1st
