@@ -123,12 +123,12 @@ python tools/test/test_GSMF-RS-DIL.py --config configs/gsmf_rs_dil_r101-d8_4xb4-
  
 | Model       | Domain A               |  Domain B              | Device  | Iterations | mIoU of Domain A | mIoU of Domain B | Log                                                    | checkpoint                                                                                         |
 | :---------: | :--------------------: | :--------------------: | :-----: | :--------: | :--------------: | :--------------: | :----------------------------------------------------: | :------------------------------------------------------------------------------------------------: |
-| GS-AUFPN    | Potsdam_IRRG_tif_512   | ——                     | RTX4090 | 80000      | 74.87            | ——               | [log](./log/GS-AUFPN-Potsdam/20240331_190416.log)      | [download](https://zenodo.org/records/13950503/files/iter_80000_potsdam.pth?download=1&preview=1)  |
-| GS-AUFPN    | Vaihingen_IRRG_tif_512 | ——                     | RTX4090 | 80000      | 69.77            | ——               | [log](./log/GS-AUFPN-Vaihingen/20240402_120940.log)    | [download](https://zenodo.org/records/13950503/files/iter_80000_vaihingen.pth?download=1&preview=1)|
-| GS-AUFPN    | LoveDA_Urban_512       | ——                     | RTX4090 | 80000      | 44.41            | ——               | [log](./log/GS-AUFPN-LoveDA_Urban/20240413_172749.log) | [download](https://zenodo.org/records/13950503/files/iter_30000_urban.pth?download=1&preview=1)    |
-| GS-AUFPN    | LoveDA_Rural_512       | ——                     | RTX4090 | 80000      | 35.89            | ——               | [log](./log/GS-AUFPN-LoveDA_Rural/20240416_190741.log) | [download](https://zenodo.org/records/13950503/files/iter_30000_rural.pth?download=1&preview=1)    |
-| GSMF-RS-DIL | Potsdam_IRRG_tif_512   | Vaihingen_IRRG_tif_512 | RTX4090 | 80000      | 61.91            | 65.81            | [log](./log/GSFM-RS-DIL-ISPRS/20240524_213132.log)     | [download](https://zenodo.org/records/13950503/files/iter_10000_isprs.pth?download=1&preview=1)    |
-| GSMF-RS-DIL | LoveDA_Urban_512       | LoveDA_Rural_512       | RTX4090 | 80000      | 51.02            | 36.21            | [log](./log/GSMF-RS-DIL-LoveDA/20240527_084944.log)    | [download](https://zenodo.org/records/13950503/files/iter_10000_loveda.pth?download=1&preview=1)   |
+| GS-AUFPN    | Potsdam_IRRG_tif_512   | ——                     | RTX4090 | 80000      | 74.87            | ——               | [log](./log/GS-AUFPN-Potsdam/20240331_190416.log)      | [download](https://zenodo.org/records/13950503/files/iter_80000_potsdam.pth?download=1)  |
+| GS-AUFPN    | Vaihingen_IRRG_tif_512 | ——                     | RTX4090 | 80000      | 69.77            | ——               | [log](./log/GS-AUFPN-Vaihingen/20240402_120940.log)    | [download](https://zenodo.org/records/13950503/files/iter_80000_vaihingen.pth?download=1)|
+| GS-AUFPN    | LoveDA_Urban_512       | ——                     | RTX4090 | 80000      | 44.41            | ——               | [log](./log/GS-AUFPN-LoveDA_Urban/20240413_172749.log) | [download](https://zenodo.org/records/13950503/files/iter_30000_urban.pth?download=1)    |
+| GS-AUFPN    | LoveDA_Rural_512       | ——                     | RTX4090 | 80000      | 35.89            | ——               | [log](./log/GS-AUFPN-LoveDA_Rural/20240416_190741.log) | [download](https://zenodo.org/records/13950503/files/iter_30000_rural.pth?download=1)    |
+| GSMF-RS-DIL | Potsdam_IRRG_tif_512   | Vaihingen_IRRG_tif_512 | RTX4090 | 80000      | 61.91            | 65.81            | [log](./log/GSFM-RS-DIL-ISPRS/20240524_213132.log)     | [download](https://zenodo.org/records/13950503/files/iter_10000_isprs.pth?download=1)    |
+| GSMF-RS-DIL | LoveDA_Urban_512       | LoveDA_Rural_512       | RTX4090 | 80000      | 51.02            | 36.21            | [log](./log/GSMF-RS-DIL-LoveDA/20240527_084944.log)    | [download](https://zenodo.org/records/13950503/files/iter_10000_loveda.pth?download=1)   |
 
 - **Results of single domain**
 > Table 1. Quantitative comparison results with State-of-the-art network.
@@ -205,12 +205,12 @@ python tools/test/test_GSMF-RS-DIL.py --config configs/gsmf_rs_dil_r101-d8_4xb4-
 Please kindly cite the papers if this code is useful and helpful for your research: 
 ```
 @article{huang2024gsmfrsdil,
-  title = {Domain Incremental Learning for Remote Sensing Semantic Segmentation with Multi-Feature Constraints in Graph Space},
+  title = {Domain-Incremental Learning for Remote Sensing Semantic Segmentation with Multifeature Constraints in Graph Space},
   author = {Huang, Wubiao and Ding, Mingtao and Deng, Fei},
   journal = {IEEE Transactions on Geoscience and Remote Sensing},
-  volume = {},
+  volume = {62},
   number = {},
-  pages = {},
+  pages = {1-15},
   year = {2024},
   DOI = {10.1109/TGRS.2024.3481875}
 }
